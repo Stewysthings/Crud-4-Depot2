@@ -1843,3 +1843,725 @@ ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
   Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
   Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
   Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-15 11:55:06 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/railties-4.1.7/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 28ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-15 11:55:38 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/railties-4.1.7/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 191ms (Views: 186.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+
+Started GET "/images/cs.jpg" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/cs.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.5ms)
+
+
+Started GET "/images/rtp.jpg" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rtp.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-11-15 11:55:51 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-11-15 11:56:02 -0800
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (18.1ms)
+  Rendered products/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 112ms (Views: 111.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"sugar", "description"=>"white stuff", "image_url"=>"", "price"=>"5.00"}, "commit"=>"Create Product"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.3ms)[0m  SELECT  1 AS one FROM "products"  WHERE "products"."title" = 'sugar' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered products/_form.html.erb (3.7ms)
+  Rendered products/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 79ms (Views: 54.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 11:56:16 -0800
+
+
+Started POST "/products" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"sugar", "description"=>"white stuff", "image_url"=>"http://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRw&url=http%3A%2F%2Fdieteticdirections.com%2Fsugar-much-consuming%2F&ei=b7BnVMqKIOL-iAK_vIG4DQ&bvm=bv.79142246,d.cGE&psig=AFQjCNEGcoeG6xZSEBUQKzc3Iv0AbYBUzw&ust=1416167915953634", "price"=>"5.00"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products"  WHERE "products"."title" = 'sugar' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered products/_form.html.erb (5.3ms)
+  Rendered products/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 95ms (Views: 88.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 11:58:14 -0800
+
+
+Started POST "/products" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"sugar", "description"=>"white stuff", "image_url"=>"http://upload.wikimedia.org/wikipedia/commons/5/56/Sugar_2xmacro.jpg", "price"=>"5.00"}, "commit"=>"Create Product"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products"  WHERE "products"."title" = 'sugar' LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "products" ("created_at", "description", "image_url", "price", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-15 19:59:18.498354"], ["description", "white stuff"], ["image_url", "http://upload.wikimedia.org/wikipedia/commons/5/56/Sugar_2xmacro.jpg"], ["price", 5.0], ["title", "sugar"], ["updated_at", "2014-11-15 19:59:18.498354"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/5
+Completed 302 Found in 44ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 11:59:18 -0800
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-15 11:59:24 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/cs.jpg" for 127.0.0.1 at 2014-11-15 11:59:24 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/cs.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-11-15 11:59:24 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.6ms)
+
+
+Started GET "/images/rtp.jpg" for 127.0.0.1 at 2014-11-15 11:59:24 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/rtp.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.0ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2014-11-15 12:00:21 -0800
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/_form.html.erb (4.8ms)
+  Rendered products/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/4" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"Rails Test Prescriptions", "description"=>"<p>\r\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\r\n        Rails applications, covering Test-Driven Development from both a\r\n        theoretical perspective (why to test) and from a practical perspective\r\n        (how to test effectively). It covers the core Rails testing tools and\r\n        procedures for Rails 2 and Rails 3, and introduces popular add-ons,\r\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\r\n      </p>", "image_url"=>"http://upload.wikimedia.org/wikipedia/commons/9/9d/Leucospermum_bolusii_flower.JPG", "price"=>"34.95"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.3ms)[0m  SELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'Rails Test Prescriptions' AND "products"."id" != 4) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "description" = ?, "image_url" = ?, "updated_at" = ? WHERE "products"."id" = 4[0m  [["description", "<p>\r\n        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing\r\n        Rails applications, covering Test-Driven Development from both a\r\n        theoretical perspective (why to test) and from a practical perspective\r\n        (how to test effectively). It covers the core Rails testing tools and\r\n        procedures for Rails 2 and Rails 3, and introduces popular add-ons,\r\n        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.\r\n      </p>"], ["image_url", "http://upload.wikimedia.org/wikipedia/commons/9/9d/Leucospermum_bolusii_flower.JPG"], ["updated_at", "2014-11-15 20:00:27.455651"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 14ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 12:00:27 -0800
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-15 12:00:32 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/cs.jpg" for 127.0.0.1 at 2014-11-15 12:00:32 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/cs.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/images/ruby.jpg" for 127.0.0.1 at 2014-11-15 12:00:32 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/ruby.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/products/3/edit" for 127.0.0.1 at 2014-11-15 12:01:56 -0800
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered products/_form.html.erb (4.2ms)
+  Rendered products/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/3" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"Programming Ruby 1.9 & 2.0", "description"=>"\r\n        Ruby is the fastest growing and most exciting dynamic language\r\n        out there. If you need to get working programs delivered fast,\r\n        you should add Ruby to your toolbox.\r\n      </p>", "image_url"=>"http://upload.wikimedia.org/wikipedia/commons/f/f0/Ruby_gem.JPG", "price"=>"49.95"}, "commit"=>"Update Product", "id"=>"3"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.1ms)[0m  SELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'Programming Ruby 1.9 & 2.0' AND "products"."id" != 3) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "products" SET "description" = ?, "image_url" = ?, "updated_at" = ? WHERE "products"."id" = 3[0m  [["description", "\r\n        Ruby is the fastest growing and most exciting dynamic language\r\n        out there. If you need to get working programs delivered fast,\r\n        you should add Ruby to your toolbox.\r\n      </p>"], ["image_url", "http://upload.wikimedia.org/wikipedia/commons/f/f0/Ruby_gem.JPG"], ["updated_at", "2014-11-15 20:02:06.490950"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/products/3" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 12:02:06 -0800
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-15 12:02:08 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/cs.jpg" for 127.0.0.1 at 2014-11-15 12:02:08 -0800
+
+ActionController::RoutingError (No route matches [GET] "/images/cs.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/stewart/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.5ms)
+
+
+Started GET "/products/2/edit" for 127.0.0.1 at 2014-11-15 12:05:11 -0800
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/_form.html.erb (2.5ms)
+  Rendered products/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/2" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5jsJfU4QDutUCBCFqu0ClfwS/U+KxGf4GrGb67UrWo=", "product"=>{"title"=>"CoffeeScript", "description"=>"\r\n        CoffeeScript is JavaScript done right. It provides all of JavaScript's\r\n\tfunctionality wrapped in a cleaner, more succinct syntax. In the first\r\n\tbook on this exciting new language, CoffeeScript guru Trevor Burnham\r\n\tshows you how to hold onto all the power and flexibility of JavaScript\r\n\twhile writing clearer, cleaner, and safer code.\r\n      </p>", "image_url"=>"http://upload.wikimedia.org/wikipedia/commons/d/d5/001_Coffee_mill.jpg", "price"=>"36"}, "commit"=>"Update Product", "id"=>"2"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products"  WHERE ("products"."title" = 'CoffeeScript' AND "products"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "products" SET "description" = ?, "image_url" = ?, "updated_at" = ? WHERE "products"."id" = 2[0m  [["description", "\r\n        CoffeeScript is JavaScript done right. It provides all of JavaScript's\r\n\tfunctionality wrapped in a cleaner, more succinct syntax. In the first\r\n\tbook on this exciting new language, CoffeeScript guru Trevor Burnham\r\n\tshows you how to hold onto all the power and flexibility of JavaScript\r\n\twhile writing clearer, cleaner, and safer code.\r\n      </p>"], ["image_url", "http://upload.wikimedia.org/wikipedia/commons/d/d5/001_Coffee_mill.jpg"], ["updated_at", "2014-11-15 20:05:21.127319"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products"  WHERE "products"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 12:05:21 -0800
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-15 12:05:24 -0800
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:09:42 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:09:42 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:09:42 -0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:15:27 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:15:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:15:27 -0800
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-11-15 12:15:39 -0800
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.3ms)
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 68ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-15 12:16:21 -0800
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:22 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-15 12:16:22 -0800
